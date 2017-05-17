@@ -11,13 +11,12 @@ try {
 }
 */
 
-// try {
+try {
   
-//   $customer = '{"data" : "Hello"}';
-//   header('Content-Type: application/json');
-//   echo $customer->jsonSerialize();
-// } catch(\Stripe\Error $e) {
-//   http_response_code(402);
-// }
-
-echo "Hello";
+  $customer = ['data' => 'Hello'];
+  header('Content-Type: application/json');
+  //echo $customer->jsonSerialize();
+  echo json_encode($customer);
+} catch(\Stripe\Error $e) {
+  http_response_code(402);
+}
