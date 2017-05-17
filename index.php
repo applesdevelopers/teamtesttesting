@@ -13,7 +13,8 @@ try {
 
 try {
   
-  $customer = ['data' => 'Hello'];
+  //$customer = ['data' => 'Hello'];
+	$customer = ['shouldRun' => '1'];
   header('Content-Type: application/json');
   //echo $customer->jsonSerialize();
   echo json_encode($customer);
