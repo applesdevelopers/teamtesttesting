@@ -14,7 +14,7 @@ try {
 try {
   
   //$customer = ['data' => 'Hello'];
-	$customer = ['shouldRun' => '1'];
+	$customer = ['shouldRun' => '0'];
   header('Content-Type: application/json');
   //echo $customer->jsonSerialize();
   echo json_encode($customer);
